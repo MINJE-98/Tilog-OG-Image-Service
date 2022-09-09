@@ -5,16 +5,13 @@ import { ParsedRequest } from './types';
 export function parseRequest(req: IncomingMessage) {
   console.log('HTTP ' + req.url);
   const { pathname, query } = parse(req.url || '/', true);
-  const { seed, fontSize, images, widths, heights, theme, md } = query || {};
+  const { seed, fontSize, images, widths, heights, md } = query || {};
 
   if (Array.isArray(fontSize)) {
     throw new Error('Expected a single fontSize');
   }
   if (Array.isArray(seed)) {
     throw new Error('Expected a single seed');
-  }
-  if (Array.isArray(theme)) {
-    throw new Error('Expected a single theme');
   }
 
   const arr = (pathname || '/').slice(1).split('.');
@@ -33,7 +30,6 @@ export function parseRequest(req: IncomingMessage) {
     seed: seed || '0',
     fileType: extension === 'jpeg' ? extension : 'png',
     text: decodeURIComponent(text),
-    theme: theme === 'dark' ? 'dark' : 'light',
     md: md === '1' || md === 'true',
     fontSize: fontSize || '96px',
     images: getArray(images),
@@ -55,16 +51,5 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 }
 
 function getDefaultImages(images: string[]): string[] {
-  //   const defaultImage =
-  //     theme === 'light'
-  //       ? 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg'
-  //       : 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-white.svg';
-
-  //   if (!images || !images[0]) {
-  //     return [defaultImage];
-  //   }
-  // if (!images[0].startsWith('https://assets.vercel.com/') && !images[0].startsWith('https://assets.zeit.co/')) {
-  //     images[0] = defaultImage;
-  // }
   return images;
 }

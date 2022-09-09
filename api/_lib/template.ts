@@ -16,16 +16,11 @@ const mono = readFileSync(
   `${__dirname}/../_fonts/NotoSansKR-Medium.otf`
 ).toString('base64');
 
-function getCss(seed: string, theme: string, fontSize: string) {
+function getCss(seed: string, fontSize: string) {
   const color = seededColor(seed);
   console.log(getBrightness(color));
   let background = backgroundColor(color);
   let foreground = `${getBrightness(color) ? '#121212' : '#fff'}`;
-
-  if (theme === 'dark') {
-    background = backgroundColor(color);
-    foreground = `${getBrightness(color) ? '#fff' : '#121212'}`;
-  }
   return `
     @font-face {
         font-family: 'Inter';
@@ -103,15 +98,14 @@ function getCss(seed: string, theme: string, fontSize: string) {
     }`;
 }
 export function getHtml(parsedReq: ParsedRequest) {
-  const { seed, text, theme, md, fontSize, images, widths, heights } =
-    parsedReq;
+  const { seed, text, md, fontSize, images, widths, heights } = parsedReq;
   return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
     <title>Generated Image</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        ${getCss(seed, theme, fontSize)}
+        ${getCss(seed, fontSize)}
     </style>
     <body>
         <div>
