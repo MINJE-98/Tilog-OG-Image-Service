@@ -12,9 +12,6 @@ const rglr = readFileSync(
 const bold = readFileSync(
   `${__dirname}/../_fonts/NotoSansKR-Medium.otf`
 ).toString('base64');
-const mono = readFileSync(
-  `${__dirname}/../_fonts/NotoSansKR-Medium.otf`
-).toString('base64');
 
 function getCss(seed: string, fontSize: string) {
   const color = seededColor(seed);
@@ -35,16 +32,8 @@ function getCss(seed: string, fontSize: string) {
         font-weight: bold;
         src: url(data:font/otf;charset=utf-8;base64,${bold}) format('otf');
     }
-    @font-face {
-      font-family: 'Vera';
-      font-style: normal;
-      font-weight: normal;
-      src: url(data:font/otf;charset=utf-8;base64,${mono})  format("otf");
-    }
-
     body {
         background: ${background};
-
         background-size: 100px 100px;
         height: 100vh;
         display: flex;
