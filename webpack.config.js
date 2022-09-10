@@ -42,7 +42,9 @@ module.exports = {
       },
     ],
   },
-
+  optimization: {
+    usedExports: true,
+  },
   output: {
     path: path.resolve(__dirname, './api/dist'), // bundle만들어질 장소
     filename: 'index.js', // bundle 될 파일 이름
