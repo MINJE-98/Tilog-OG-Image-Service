@@ -23,3 +23,10 @@ https://og.tilog.link/ 접속
 
 ```
 
+## 예제 이미지
+
+![틸로그 메인이미지](https://og.tilog.link/.png?md=1&fontSize=90px&seed=3729&images=https://static.tilog.link/tilog-logo-white.svg)
+
+![틸로그 메인이미지](https://og.tilog.link/TILog%20Project..png?md=1&fontSize=90px&seed=3729&images=https://static.tilog.link/tilog-logo-white.svg)
+
+![TypeScript](https://og.tilog.link/**TypeScript**.png?md=1&fontSize=100px&seed=3)
