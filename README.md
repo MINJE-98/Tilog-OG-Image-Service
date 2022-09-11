@@ -10,7 +10,11 @@ metadata의 OpenGraph Image에 Post의 기본이미지를 제공하고, 다른 �
 
 ## 추가한 기능
 
-seed QueryString을 추가하여 PostID에 대응하여 이미지 생성 기능 추가
+이미지를 기본 사용옵션을 제거하고 필요할 때 사용할 수 있게 변경
+
+seed QueryString을 추가하여 TILog PostID에 대응하는 색상 이미지 생성
+
+한국어가 깨지는 버그 수정
 
 ## 사용방법
 
