@@ -1,6 +1,6 @@
 # TILog-OG-Image-Service
 
-- 해당 레포지토리는 ![og-image](https://github.com/vercel/og-image)를 Fork하였습니다.
+- 해당 레포지토리는 [og-image](https://github.com/vercel/og-image)를 Fork하였습니다.
 
 ## 개요
 
