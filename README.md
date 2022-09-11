@@ -8,6 +8,10 @@ TILog의 Post는 이미지가 없을시 PostID에 따라 기본 이미지를 제
 
 metadata의 OpenGraph Image에 Post의 기본이미지를 제공하고, 다른 페이지의 OG Image를 지원하기위해 사용합니다.
 
+## 추가한 기능
+
+seed QueryString을 추가하여 PostID에 대응하여 이미지 생성 기능 추가
+
 ## 사용방법
 
 ```
