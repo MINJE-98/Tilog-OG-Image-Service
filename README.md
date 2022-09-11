@@ -27,6 +27,6 @@ https://og.tilog.link/ 접속
 
 ![틸로그 메인이미지](https://og.tilog.link/.png?md=1&fontSize=90px&seed=3729&images=https://static.tilog.link/tilog-logo-white.svg)
 
-![틸로그 메인이미지](https://og.tilog.link/TILog%20Project..png?md=1&fontSize=90px&seed=3729&images=https://static.tilog.link/tilog-logo-white.svg)
+![틸로그 메인이미지](https://og.tilog.link/오늘%20배운것을%20기록하고,%20남들과%20공유해보세요.🤩.png?md=1&fontSize=50px&seed=3729&images=https://static.tilog.link/tilog-logo-white.svg)
 
 ![TypeScript](https://og.tilog.link/**TypeScript**.png?md=1&fontSize=100px&seed=3)
