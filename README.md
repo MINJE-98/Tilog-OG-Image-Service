@@ -1,12 +1,12 @@
 # TILog-OG-Image-Service
 
-- 해당 레포지토리는 [og-image](https://github.com/vercel/og-image)를 Fork하였습니다.
+해당 레포지토리는 [og-image](https://github.com/vercel/og-image)를 Fork하였습니다.
 
 ## 개요
 
 TILog의 Post는 이미지가 없을시 PostID에 따라 기본 이미지를 제공합니다.
 
-metadata의 OpenGraph Image를 사용하여 Post의 기본이미지를 제공하고, 다른 페이지의 OG Image또한 지원하기위해 사용합니다.
+metadata의 OpenGraph Image에 Post의 기본이미지를 제공하고, 다른 페이지의 OG Image를 지원하기위해 사용합니다.
 
 ## 사용방법
 
