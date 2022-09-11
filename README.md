@@ -16,6 +16,10 @@ seed QueryString을 추가하여 TILog PostID에 대응하는 색상 이미지 �
 
 한국어가 깨지는 버그 수정
 
+## 배포
+vercel serverless
+
+
 ## 사용방법
 
 ```
