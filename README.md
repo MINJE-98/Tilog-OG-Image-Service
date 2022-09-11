@@ -4,9 +4,9 @@
 
 ## 개요
 
-TILog의 Post는 이미지가 없을시 PostID에 따라 기본 이미지를 제공합니다.
+metadata의 OpenGraph Image에 사용할 URL을 생성해주는 기능을 제공합니다.
 
-metadata의 OpenGraph Image에 Post의 기본이미지를 제공하고, 다른 페이지의 OG Image를 지원하기위해 사용합니다.
+TILog의 Post는 이미지가 없을시 PostID에 따라 기본 이미지를 제공합니다.
 
 ## 추가한 기능
 
